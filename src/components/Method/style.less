@@ -1,0 +1,60 @@
+.addressItem-container {
+  cursor: pointer;
+  padding-bottom: 9px;
+  font-size: 13px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 3px 1px 1px 1px;
+  border-color: #b9b7b7;
+
+  .ant-divider {
+    margin: 0;
+    margin-top: 9px;
+  }
+
+  &:hover .addressItem-row {
+    .addressItem-rowNormal {
+      display: inline-flex;
+    }
+  }
+
+  .addressItem-row {
+    padding: 0;
+    margin-top: 9px;
+
+    .addressItem-colIcon {
+      text-align: center;
+    }
+
+    .addressItem-rowNormal {
+      display: none;
+      margin-left: 10px;
+      background: #7f7f7f;
+      padding: 0 5px;
+      color: #ffffff;
+      border-radius: 3px;
+    }
+
+    .addressItem-rowSelected {
+      display: inline-flex;
+      margin-left: 10px;
+      background: #39be4f;
+      padding: 0 5px;
+      color: #ffffff;
+      border-radius: 3px;
+    }
+
+    .addressItem-rowName {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .addressItem-rowNameEdit {
+      font-size: 12px;
+      color: #1275cd;
+      background-color: transparent;
+    }
+  }
+}

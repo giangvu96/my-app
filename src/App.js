@@ -1,28 +1,42 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Row, Tabs, Col} from 'antd';
+import "antd/dist/antd.css";
+import Topic from '/home/giangvu/Desktop/my-app/src/components/Topic';
+import Method from '/home/giangvu/Desktop/my-app/src/components/Method';
 import logo from './logo.svg';
 import './App.css';
 
+const TabPane = Tabs.TabPane;
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+
+        return (
+            <div className="App">
+                <Row type="flex"
+                     className="App-header">
+                    <Col span={5}/>
+                    <Col span={2}>
+                        <img src={logo} className="App-logo" alt="logo"/>
+                    </Col>
+                    <Col span={10}>
+                        <h1>Chương trình tóm tắt đa văn bản</h1>
+                    </Col>
+
+                </Row>
+                <Row className="App-content">
+                    <Tabs defaultActiveKey="1">
+                        <TabPane tab="Topic" key="1">
+                            <Topic/>
+                        </TabPane>
+                        <TabPane tab="Method" key="2">
+                            <Method/>
+                        </TabPane>
+                    </Tabs>
+                </Row>
+            </div>
+        );
+    }
 }
 
 export default App;
