@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Row, Tabs, Col} from 'antd';
 import "antd/dist/antd.css";
-import Topic from '/home/giangvu/Desktop/my-app/src/components/Topic';
-import Method from '/home/giangvu/Desktop/my-app/src/components/Method';
+import Topic from './components/Topic';
+import Method from './components/Method';
 import logo from './logo.svg';
 import './App.css';
 
